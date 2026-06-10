@@ -21,14 +21,8 @@ import logging
 from supabase import create_client, Client
 from datetime import datetime
 
-# Set your Gemini API key
-GOOGLE_API_KEY = "AIzaSyBREwLriT1bsEYB0Ansnf-j83xqGZjrybY"
-genai.configure(api_key=GOOGLE_API_KEY)
 
-# Initialize Supabase client
-SUPABASE_URL = "https://siayecqdxwvgagmpkcmq.supabase.co"  # Replace with your Supabase URL
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNpYXllY3FkeHd2Z2FnbXBrY21xIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0ODU4ODk2NCwiZXhwIjoyMDY0MTY0OTY0fQ.ZoL7-hrj25xtdtIBXy75T4zYdPq0OnhmiPY2lySkw04"  # Replace with your Supabase Key
-supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+
 
 # Load JSON Data
 json_path = os.path.join("json", "sam.json")
